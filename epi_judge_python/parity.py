@@ -4,8 +4,8 @@ from test_framework import generic_test
 def parity(x: int) -> int:
     result = 0
     while x:
-        result ^= x & 1
-        x >>= 1
+        result ^= 1
+        x = x & (x - 1) # drop the lowest set bit of x
     return result
 
 
