@@ -1,20 +1,48 @@
 #include <stdexcept>
 #include <vector>
-
+#include <algorithm>
+#include <queue>
 #include "test_framework/generic_test.h"
 #include "test_framework/serialization_traits.h"
 #include "test_framework/timed_executor.h"
+
 using std::vector;
+using namespace std;
 
 struct GraphVertex {
   int d = -1;
   vector<GraphVertex*> edges;
-};
+ };
 
-bool IsAnyPlacementFeasible(vector<GraphVertex>* graph) {
-  // TODO - you fill in here.
-  return true;
+
+bool bfs(GraphVertex* v) {
+	v->d = 0;
+	queue<GraphVertex*> q;
+	q.push(v);
+
+	while (!empty(q)) {
+		for (GraphVertex* u : q.front()->edges) {
+			if (u->d == -1) {
+				u->d = q.front()->d + 1;
+				q.push(u);
+			}
+			else if (u->d == q.front()->d) {
+				return false;
+			}
+		}
+		q.pop();
+	}
+	return true;
 }
+
+	bool IsAnyPlacementFeasible(vector<GraphVertex>*graph) {
+		// TODO - you fill in here.
+		return all_of(begin(*graph), end(*graph),
+			[](GraphVertex& v) {
+				return v.d != -1 || bfs(&v);
+			});
+			
+	}
 struct Edge {
   int from;
   int to;
