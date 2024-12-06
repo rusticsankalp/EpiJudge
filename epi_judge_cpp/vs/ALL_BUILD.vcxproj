@@ -1,0 +1,1060 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{308FBDB8-95E8-3EA9-AC70-210ACAE0E755}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\repo2\EpiJudge\epi_judge_cpp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/repo2/EpiJudge/epi_judge_cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/repo2/EpiJudge/epi_judge_cpp -BE:/repo2/EpiJudge/epi_judge_cpp/vs --check-stamp-file E:/repo2/EpiJudge/epi_judge_cpp/vs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeCCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeCXXCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeRCCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/repo2/EpiJudge/epi_judge_cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/repo2/EpiJudge/epi_judge_cpp -BE:/repo2/EpiJudge/epi_judge_cpp/vs --check-stamp-file E:/repo2/EpiJudge/epi_judge_cpp/vs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeCCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeCXXCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeRCCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/repo2/EpiJudge/epi_judge_cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/repo2/EpiJudge/epi_judge_cpp -BE:/repo2/EpiJudge/epi_judge_cpp/vs --check-stamp-file E:/repo2/EpiJudge/epi_judge_cpp/vs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeCCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeCXXCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeRCCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/repo2/EpiJudge/epi_judge_cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/repo2/EpiJudge/epi_judge_cpp -BE:/repo2/EpiJudge/epi_judge_cpp/vs --check-stamp-file E:/repo2/EpiJudge/epi_judge_cpp/vs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeCCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeCXXCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeRCCompiler.cmake;E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\3.30.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\repo2\EpiJudge\epi_judge_cpp\vs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\ZERO_CHECK.vcxproj">
+      <Project>{3F79BA43-E3DB-3427-BFDA-0260791642B4}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\a_b_sqrt2.vcxproj">
+      <Project>{10D7D9F9-B393-3CE7-BFA5-3F161B735A6A}</Project>
+      <Name>a_b_sqrt2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\absent_value_array.vcxproj">
+      <Project>{45AEAA85-4D49-32CC-B48E-5F74D55CA625}</Project>
+      <Name>absent_value_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\adding_credits.vcxproj">
+      <Project>{41020E18-45D5-3371-BCF4-A283F98E08C5}</Project>
+      <Name>adding_credits</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\advance_by_offsets.vcxproj">
+      <Project>{5F884944-7F19-3993-AA44-7FE55CE1D25C}</Project>
+      <Name>advance_by_offsets</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\alternating_array.vcxproj">
+      <Project>{E19951F4-9D4A-3901-8616-4E04F01FA776}</Project>
+      <Name>alternating_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\anagrams.vcxproj">
+      <Project>{B8E754DB-C225-3B8C-A7AD-4D494B4D1398}</Project>
+      <Name>anagrams</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\apply_permutation.vcxproj">
+      <Project>{C0D1CBAB-3870-36C3-9B1E-A526D9AF0D23}</Project>
+      <Name>apply_permutation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\arbitrage.vcxproj">
+      <Project>{F78F31CB-F8E4-320E-84F1-2782DBD9CA1D}</Project>
+      <Name>arbitrage</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\binomial_coefficients.vcxproj">
+      <Project>{920EB048-19F0-3B24-AAB3-EB5AE802061D}</Project>
+      <Name>binomial_coefficients</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\bonus.vcxproj">
+      <Project>{65958A30-8F5D-3DDC-93FB-0D37883791E3}</Project>
+      <Name>bonus</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\bst_from_preorder.vcxproj">
+      <Project>{D1810F19-683E-36E4-85E0-696F6A85C9A1}</Project>
+      <Name>bst_from_preorder</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\bst_from_sorted_array.vcxproj">
+      <Project>{3525B177-E0A6-3BBD-A752-38ED85FE0D24}</Project>
+      <Name>bst_from_sorted_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\bst_merge.vcxproj">
+      <Project>{0748E6D6-DD2C-38CC-AFA6-4485752547FA}</Project>
+      <Name>bst_merge</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\bst_to_sorted_list.vcxproj">
+      <Project>{6EF9A1A6-2146-38A6-8567-73A4F71D39CB}</Project>
+      <Name>bst_to_sorted_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\buy_and_sell_stock.vcxproj">
+      <Project>{CD6C296C-013E-35AA-A2CC-DDAFD7F44858}</Project>
+      <Name>buy_and_sell_stock</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\buy_and_sell_stock_k_times.vcxproj">
+      <Project>{807C6C6C-47E7-36B3-AA53-3C076C48CAC9}</Project>
+      <Name>buy_and_sell_stock_k_times</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\buy_and_sell_stock_twice.vcxproj">
+      <Project>{B195288D-2CAE-3F5A-88CF-52F4D4AD8C1B}</Project>
+      <Name>buy_and_sell_stock_twice</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\calendar_rendering.vcxproj">
+      <Project>{03676F4B-5A3E-3269-BE94-4E36C7200780}</Project>
+      <Name>calendar_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\circular_queue.vcxproj">
+      <Project>{000C95E9-5C44-32EF-826F-6B6A454491E1}</Project>
+      <Name>circular_queue</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\closest_int_same_weight.vcxproj">
+      <Project>{5C3C0AC2-E789-3E7D-8C02-61933AF13D5A}</Project>
+      <Name>closest_int_same_weight</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\collatz_checker.vcxproj">
+      <Project>{35380AAD-D245-32AC-B2D1-966D14A24D82}</Project>
+      <Name>collatz_checker</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\combinations.vcxproj">
+      <Project>{2AA1AE92-14C7-33CD-8072-11CF60D04F53}</Project>
+      <Name>combinations</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\convert_base.vcxproj">
+      <Project>{53B5DCC7-07D8-3E59-949F-D680B0043A9B}</Project>
+      <Name>convert_base</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\copy_posting_list.vcxproj">
+      <Project>{FD6DE589-A577-3221-A247-C7E9D2243FA7}</Project>
+      <Name>copy_posting_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\count_bits.vcxproj">
+      <Project>{50F4B493-6BFB-3CE8-8C0B-387DF3B90BA0}</Project>
+      <Name>count_bits</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\count_inversions.vcxproj">
+      <Project>{191A4284-33F0-3A37-9351-0BEAE0C950AD}</Project>
+      <Name>count_inversions</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\deadlock_detection.vcxproj">
+      <Project>{1298FE49-57A1-37A2-A212-6E99ED4D6A74}</Project>
+      <Name>deadlock_detection</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\defective_jugs.vcxproj">
+      <Project>{2725D0E0-1B34-371E-868C-92E3CF64694A}</Project>
+      <Name>defective_jugs</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\delete_from_list.vcxproj">
+      <Project>{C3C2BFBA-E0E4-32F9-8F16-C7013499A383}</Project>
+      <Name>delete_from_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\delete_kth_last_from_list.vcxproj">
+      <Project>{5C0E254F-B2E0-3A6E-AE2A-7165C8298E02}</Project>
+      <Name>delete_kth_last_from_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\delete_node_from_list.vcxproj">
+      <Project>{6BEAF366-3814-35A0-B03B-3E59BE7B499E}</Project>
+      <Name>delete_node_from_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\descendant_and_ancestor_in_bst.vcxproj">
+      <Project>{52905557-57E4-3D9D-AAE2-15B82780D52C}</Project>
+      <Name>descendant_and_ancestor_in_bst</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\directory_path_normalization.vcxproj">
+      <Project>{2F0B7691-3D37-31BE-9BB0-A2C791985A3A}</Project>
+      <Name>directory_path_normalization</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\do_lists_overlap.vcxproj">
+      <Project>{6B423B06-3B68-356F-805E-D60E2FF7349D}</Project>
+      <Name>do_lists_overlap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\do_terminated_lists_overlap.vcxproj">
+      <Project>{CE05ADA9-87ED-3182-8CDF-C6DF4942F2E4}</Project>
+      <Name>do_terminated_lists_overlap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\drawing_skyline.vcxproj">
+      <Project>{97997380-77DA-3A4E-87FC-6BFB36647CC2}</Project>
+      <Name>drawing_skyline</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\dutch_national_flag.vcxproj">
+      <Project>{10945C99-CC77-3E64-9830-26EF836C08BC}</Project>
+      <Name>dutch_national_flag</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\element_appearing_once.vcxproj">
+      <Project>{77DF8D18-9955-32D8-A5BF-C1971DF2A5DA}</Project>
+      <Name>element_appearing_once</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\enumerate_balanced_parentheses.vcxproj">
+      <Project>{95DECB89-4BE8-3543-8F05-A09FB698FA3D}</Project>
+      <Name>enumerate_balanced_parentheses</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\enumerate_palindromic_decompositions.vcxproj">
+      <Project>{99B5208E-BBD6-3096-A410-A1D20743890D}</Project>
+      <Name>enumerate_palindromic_decompositions</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\enumerate_trees.vcxproj">
+      <Project>{6319DD7F-66B9-3286-8FFF-0628A49B21CB}</Project>
+      <Name>enumerate_trees</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\euclidean_gcd.vcxproj">
+      <Project>{B4F494DD-C3A3-3E01-ABBC-0867A162C804}</Project>
+      <Name>euclidean_gcd</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\evaluate_rpn.vcxproj">
+      <Project>{D1C84C3D-A2FF-3387-BDEF-77925DF22C94}</Project>
+      <Name>evaluate_rpn</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\even_odd_array.vcxproj">
+      <Project>{116DA013-8B85-3536-96B1-5EED8372D41A}</Project>
+      <Name>even_odd_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\even_odd_list_merge.vcxproj">
+      <Project>{810D4E37-7FEE-3270-94A1-9525F5056751}</Project>
+      <Name>even_odd_list_merge</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\fibonacci.vcxproj">
+      <Project>{6030EFFA-1AF9-3AE0-91CB-793FA60A3AD7}</Project>
+      <Name>fibonacci</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\find_salary_threshold.vcxproj">
+      <Project>{E29FF6A8-EDE4-3D11-9776-FEF1072AAD1B}</Project>
+      <Name>find_salary_threshold</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\first_missing_positive_entry.vcxproj">
+      <Project>{E4D45E4F-5F23-3B69-87F6-19BD4A72C909}</Project>
+      <Name>first_missing_positive_entry</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\gcd.vcxproj">
+      <Project>{5E29EBD9-3732-335E-885E-35A4E2750CD9}</Project>
+      <Name>gcd</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\graph_clone.vcxproj">
+      <Project>{71E36C6E-F1F1-34DA-B7AD-2C4F3E43E84F}</Project>
+      <Name>graph_clone</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\gray_code.vcxproj">
+      <Project>{930DB87F-26E3-3717-8FCA-DE2428A333E9}</Project>
+      <Name>gray_code</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\group_equal_entries.vcxproj">
+      <Project>{018E3650-E449-3446-AFB8-4ECAEC03C77B}</Project>
+      <Name>group_equal_entries</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\h_index.vcxproj">
+      <Project>{C2D21CDA-54B7-37D1-9128-B02B3466924A}</Project>
+      <Name>h_index</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\hanoi.vcxproj">
+      <Project>{FC52C83C-63E6-37D9-B4EA-E4892B55E195}</Project>
+      <Name>hanoi</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\huffman_coding.vcxproj">
+      <Project>{35CD89B2-102C-3D82-A628-C28E2D834DCA}</Project>
+      <Name>huffman_coding</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\insert_in_list.vcxproj">
+      <Project>{A3C1F8BF-2169-319D-9ED5-C7013A3F0BC5}</Project>
+      <Name>insert_in_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\insert_operators_in_string.vcxproj">
+      <Project>{3357DA0D-0F78-39F1-9DED-D2F469B7A20C}</Project>
+      <Name>insert_operators_in_string</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\int_as_array_increment.vcxproj">
+      <Project>{07C1B0A6-D208-30DB-9BBE-D49351CCB13A}</Project>
+      <Name>int_as_array_increment</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\int_as_array_multiply.vcxproj">
+      <Project>{10C0C10D-47A8-3E45-A7BA-DF9A27CD254D}</Project>
+      <Name>int_as_array_multiply</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\int_as_list_add.vcxproj">
+      <Project>{F34DD21D-EBE8-3D37-8B08-43EC517916E4}</Project>
+      <Name>int_as_list_add</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\int_square_root.vcxproj">
+      <Project>{5576EB79-DA47-363A-901A-F7120CE294DE}</Project>
+      <Name>int_square_root</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\intersect_sorted_arrays.vcxproj">
+      <Project>{0B17A768-F571-3996-889B-40571CCE806A}</Project>
+      <Name>intersect_sorted_arrays</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\interval_add.vcxproj">
+      <Project>{CA9F9C18-D70B-3EA1-BEEC-CD1C7C93611A}</Project>
+      <Name>interval_add</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\intervals_union.vcxproj">
+      <Project>{5E29C206-44B1-3261-BE03-71EA9090F602}</Project>
+      <Name>intervals_union</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_anonymous_letter_constructible.vcxproj">
+      <Project>{1AAE106C-36D9-3866-8ACF-411536C57D16}</Project>
+      <Name>is_anonymous_letter_constructible</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_array_dominated.vcxproj">
+      <Project>{395E8D65-085F-3E6C-9F2E-3EEF2B0EAF21}</Project>
+      <Name>is_array_dominated</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_circuit_wirable.vcxproj">
+      <Project>{B3CDA01A-5D68-3CB3-BF7C-1E443D18E313}</Project>
+      <Name>is_circuit_wirable</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_list_cyclic.vcxproj">
+      <Project>{0C9CEF8B-C206-30DC-9A3F-0E6177B53CB2}</Project>
+      <Name>is_list_cyclic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_list_palindromic.vcxproj">
+      <Project>{5E4447F5-A5DA-3896-82FA-E340551A50CC}</Project>
+      <Name>is_list_palindromic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_number_palindromic.vcxproj">
+      <Project>{01E6DE9A-1E23-3379-86C5-FC13584C1106}</Project>
+      <Name>is_number_palindromic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_string_decomposable_into_words.vcxproj">
+      <Project>{CF1A943A-195A-3AC1-962F-45653300F698}</Project>
+      <Name>is_string_decomposable_into_words</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_string_in_matrix.vcxproj">
+      <Project>{45F8DF26-CF99-33F3-ABD9-436600502371}</Project>
+      <Name>is_string_in_matrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_string_palindromic.vcxproj">
+      <Project>{72C0A10E-C2D7-39D1-A084-67D49B637314}</Project>
+      <Name>is_string_palindromic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_string_palindromic_punctuation.vcxproj">
+      <Project>{D588BF4F-A8AF-3932-8FE5-87C3CD8B6486}</Project>
+      <Name>is_string_palindromic_punctuation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_string_permutable_to_palindrome.vcxproj">
+      <Project>{CFB5C4F2-60DE-34FD-8D64-F4EE23CAEFBF}</Project>
+      <Name>is_string_permutable_to_palindrome</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_tree_a_bst.vcxproj">
+      <Project>{5354C8B0-7BBA-3DA5-8D16-5D7CFE0EE99A}</Project>
+      <Name>is_tree_a_bst</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_tree_balanced.vcxproj">
+      <Project>{1AAEB6EE-33B3-3D9B-B195-8385E0A596B2}</Project>
+      <Name>is_tree_balanced</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_tree_symmetric.vcxproj">
+      <Project>{5C304DA4-179C-3C2C-89DE-40520BBD5CC9}</Project>
+      <Name>is_tree_symmetric</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_valid_parenthesization.vcxproj">
+      <Project>{86802A98-CCF4-3008-B34E-D733744C938E}</Project>
+      <Name>is_valid_parenthesization</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\is_valid_sudoku.vcxproj">
+      <Project>{F0A1C020-021A-3312-81E7-9F3BFEE12258}</Project>
+      <Name>is_valid_sudoku</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\k_closest_stars.vcxproj">
+      <Project>{4CF1E8CF-034B-3001-8FAD-4A4F391FF5D4}</Project>
+      <Name>k_closest_stars</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\k_largest_in_heap.vcxproj">
+      <Project>{C1A685CF-AFA7-39D4-A3BA-36CC342D1032}</Project>
+      <Name>k_largest_in_heap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\k_largest_values_in_bst.vcxproj">
+      <Project>{5EE49019-E740-3E20-9AAC-6E1FCE95D265}</Project>
+      <Name>k_largest_values_in_bst</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\knapsack.vcxproj">
+      <Project>{39744A81-7334-37AE-88A7-67A8ADC84E28}</Project>
+      <Name>knapsack</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\kth_largest_element_in_long_array.vcxproj">
+      <Project>{64A65E72-B4D0-3E09-B0C0-3154F14984ED}</Project>
+      <Name>kth_largest_element_in_long_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\kth_largest_element_in_two_sorted_arrays.vcxproj">
+      <Project>{A3ABD0F8-2D88-345C-89E0-5994C2416F02}</Project>
+      <Name>kth_largest_element_in_two_sorted_arrays</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\kth_largest_in_array.vcxproj">
+      <Project>{F1ECEFF5-2751-301A-A541-92843E1CF212}</Project>
+      <Name>kth_largest_in_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\kth_node_in_tree.vcxproj">
+      <Project>{A7EF127C-7A4F-3906-AE93-8E653C86BE22}</Project>
+      <Name>kth_node_in_tree</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\largest_rectangle_under_skyline.vcxproj">
+      <Project>{49A66BF3-C8C3-3337-A11F-DD1ED61D9685}</Project>
+      <Name>largest_rectangle_under_skyline</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\left_right_justify_text.vcxproj">
+      <Project>{0FB17C96-3D35-396E-B280-F0BB043EC026}</Project>
+      <Name>left_right_justify_text</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\levenshtein_distance.vcxproj">
+      <Project>{4592C1FF-6E09-3AC2-90EB-F788B6A06E50}</Project>
+      <Name>levenshtein_distance</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\line_through_most_points.vcxproj">
+      <Project>{2FE45451-6043-3911-9607-81A1C89657DA}</Project>
+      <Name>line_through_most_points</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\list_cyclic_right_shift.vcxproj">
+      <Project>{DE813490-EDD2-36D8-9A35-BED7C9B0CF2B}</Project>
+      <Name>list_cyclic_right_shift</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\longest_contained_interval.vcxproj">
+      <Project>{CB2AE876-661C-3F14-90C7-A0022CAED5C5}</Project>
+      <Name>longest_contained_interval</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\longest_increasing_subarray.vcxproj">
+      <Project>{0E29767A-A269-3CC5-9CD6-1799D44CD938}</Project>
+      <Name>longest_increasing_subarray</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\longest_nondecreasing_subsequence.vcxproj">
+      <Project>{BB7BF987-59A3-3F92-AC6E-39AB9D759B47}</Project>
+      <Name>longest_nondecreasing_subsequence</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\longest_subarray_with_distinct_values.vcxproj">
+      <Project>{A6DC2F69-E736-38D5-81AF-3123001CB852}</Project>
+      <Name>longest_subarray_with_distinct_values</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\longest_subarray_with_sum_constraint.vcxproj">
+      <Project>{3E66D5D7-A3FC-3341-AF0E-7162C63CED2B}</Project>
+      <Name>longest_subarray_with_sum_constraint</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\longest_substring_with_matching_parentheses.vcxproj">
+      <Project>{6B73C126-3459-3F13-9C6E-C263D1E9B7DD}</Project>
+      <Name>longest_substring_with_matching_parentheses</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\look_and_say.vcxproj">
+      <Project>{16B52C70-896E-3268-A9E9-16919FE512C8}</Project>
+      <Name>look_and_say</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\lowest_common_ancestor.vcxproj">
+      <Project>{9FE23253-FA3E-3F66-B939-4F5E13C785D7}</Project>
+      <Name>lowest_common_ancestor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\lowest_common_ancestor_close_ancestor.vcxproj">
+      <Project>{B6A47321-CB68-33D7-8D69-6788726A81B7}</Project>
+      <Name>lowest_common_ancestor_close_ancestor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\lowest_common_ancestor_in_bst.vcxproj">
+      <Project>{FDAEF406-FB29-3034-AEA3-2E8CA1DC239D}</Project>
+      <Name>lowest_common_ancestor_in_bst</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\lowest_common_ancestor_with_parent.vcxproj">
+      <Project>{224E469E-1663-3043-8816-0754862C870D}</Project>
+      <Name>lowest_common_ancestor_with_parent</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\lru_cache.vcxproj">
+      <Project>{75D5EBFA-3BEC-3694-B3F4-DE79EB551512}</Project>
+      <Name>lru_cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\majority_element.vcxproj">
+      <Project>{521AF15D-C16A-354B-BF5A-4D6448FC3B47}</Project>
+      <Name>majority_element</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\making_change.vcxproj">
+      <Project>{65AD2A99-75FA-39B9-A41E-F05DB45B0F45}</Project>
+      <Name>making_change</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\matrix_connected_regions.vcxproj">
+      <Project>{20095A61-083E-31E1-8486-74F1DDEA6E71}</Project>
+      <Name>matrix_connected_regions</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\matrix_enclosed_regions.vcxproj">
+      <Project>{8ADD4052-3732-367C-BF88-338ED6ABF13F}</Project>
+      <Name>matrix_enclosed_regions</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\matrix_rotation.vcxproj">
+      <Project>{5210CE2C-0D9E-3B11-8907-B54EC4360EAA}</Project>
+      <Name>matrix_rotation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\max_of_sliding_window.vcxproj">
+      <Project>{8C640434-476E-3AE4-A4E6-E75217CD575E}</Project>
+      <Name>max_of_sliding_window</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\max_product_all_but_one.vcxproj">
+      <Project>{D50E08C8-9341-3AE6-9FCD-67FE418C569D}</Project>
+      <Name>max_product_all_but_one</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\max_safe_height.vcxproj">
+      <Project>{CF6D2F11-0A0A-356E-AE3E-E4064EB43E55}</Project>
+      <Name>max_safe_height</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\max_square_submatrix.vcxproj">
+      <Project>{062D227C-6CF5-3A86-BCB1-44629124B54F}</Project>
+      <Name>max_square_submatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\max_submatrix.vcxproj">
+      <Project>{08F28D2B-6417-3B40-98D9-5D874412E9CD}</Project>
+      <Name>max_submatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\max_sum_subarray.vcxproj">
+      <Project>{B47222EA-3C35-3755-8BC7-D36478F901D9}</Project>
+      <Name>max_sum_subarray</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\max_teams_in_photograph.vcxproj">
+      <Project>{7DD3BE23-3428-35FE-B63E-CBA7C6959017}</Project>
+      <Name>max_teams_in_photograph</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\max_trapped_water.vcxproj">
+      <Project>{9EFCB4B5-5DAD-31AF-866F-B1A791ED0134}</Project>
+      <Name>max_trapped_water</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\max_water_trappable.vcxproj">
+      <Project>{3DCC1498-4E81-3CC3-A7B2-EB8398FEA818}</Project>
+      <Name>max_water_trappable</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\maximum_subarray_in_circular_array.vcxproj">
+      <Project>{491C8DB8-F85F-3152-93E0-BE588A07037D}</Project>
+      <Name>maximum_subarray_in_circular_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\minimum_distance_3_sorted_arrays.vcxproj">
+      <Project>{2DAA4377-DC9C-3B13-A581-6886EE13EC3B}</Project>
+      <Name>minimum_distance_3_sorted_arrays</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\minimum_points_covering_intervals.vcxproj">
+      <Project>{722A8180-6969-3D31-AF68-C10215DB9E55}</Project>
+      <Name>minimum_points_covering_intervals</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\minimum_waiting_time.vcxproj">
+      <Project>{4FA13A1B-A325-3B32-8E2A-F705DA695F21}</Project>
+      <Name>minimum_waiting_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\minimum_weight_path_in_a_triangle.vcxproj">
+      <Project>{8C457C47-959F-366E-98E1-E98C4D51587F}</Project>
+      <Name>minimum_weight_path_in_a_triangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\n_queens.vcxproj">
+      <Project>{DC172F88-443C-394F-BAD7-21BCC474BD48}</Project>
+      <Name>n_queens</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\nearest_repeated_entries.vcxproj">
+      <Project>{E08CAC63-AB0D-3ED9-A407-8003885A9794}</Project>
+      <Name>nearest_repeated_entries</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\next_permutation.vcxproj">
+      <Project>{AD95B9CB-701F-38DD-8D57-109798FDA217}</Project>
+      <Name>next_permutation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\nonuniform_random_number.vcxproj">
+      <Project>{3B490538-2770-3518-B7D0-007466F087DE}</Project>
+      <Name>nonuniform_random_number</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\number_of_score_combinations.vcxproj">
+      <Project>{970F6A23-9CEB-35B2-8E00-DA7723254E3F}</Project>
+      <Name>number_of_score_combinations</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\number_of_traversals_matrix.vcxproj">
+      <Project>{3320683B-90FC-3F94-9FEC-87D8220E98E1}</Project>
+      <Name>number_of_traversals_matrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\number_of_traversals_staircase.vcxproj">
+      <Project>{2A650CF5-86DF-33A9-BACC-B2CB2ED6C98D}</Project>
+      <Name>number_of_traversals_staircase</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\offline_sampling.vcxproj">
+      <Project>{A0814CBD-CAE4-3A78-8841-6DB905D161D7}</Project>
+      <Name>offline_sampling</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\online_median.vcxproj">
+      <Project>{5FE7B759-A7F7-3C37-BC45-90A1D7F7E658}</Project>
+      <Name>online_median</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\online_sampling.vcxproj">
+      <Project>{92DA3096-DD82-3EED-88E9-7F854732017C}</Project>
+      <Name>online_sampling</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\parity.vcxproj">
+      <Project>{2BA19D64-46A6-387B-B1B3-77F0E3188CD5}</Project>
+      <Name>parity</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\pascal_triangle.vcxproj">
+      <Project>{D2B1AA30-D05A-3CE8-8227-CF7E6B02853B}</Project>
+      <Name>pascal_triangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\path_sum.vcxproj">
+      <Project>{2D0D8360-138C-30FF-8820-8CE86742407F}</Project>
+      <Name>path_sum</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\permutations.vcxproj">
+      <Project>{7959DFE2-4C32-37CF-A3B2-AE971852609F}</Project>
+      <Name>permutations</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\phone_number_mnemonic.vcxproj">
+      <Project>{CD8CEB6C-A9F8-31B8-B60C-8A75054485AF}</Project>
+      <Name>phone_number_mnemonic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\picking_up_coins.vcxproj">
+      <Project>{30FDDDA0-AB35-3ACB-9D33-BB1F7E6FEEB4}</Project>
+      <Name>picking_up_coins</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\pivot_list.vcxproj">
+      <Project>{1DF1E217-F8A4-36FE-B960-0F7A6F71B615}</Project>
+      <Name>pivot_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\power_set.vcxproj">
+      <Project>{490EDA54-76E7-379D-AD2C-8A3596404A08}</Project>
+      <Name>power_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\power_x_y.vcxproj">
+      <Project>{2244A744-1161-35FD-BAA8-5F74D3E31E72}</Project>
+      <Name>power_x_y</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\pretty_printing.vcxproj">
+      <Project>{03241D1E-A381-36DF-8509-F59CC0A6EC15}</Project>
+      <Name>pretty_printing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\prime_sieve.vcxproj">
+      <Project>{72643FCF-F7F6-3563-8946-882914621295}</Project>
+      <Name>prime_sieve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\primitive_divide.vcxproj">
+      <Project>{FB7EDE5D-95DB-3F76-B9FD-6F977A93AEB2}</Project>
+      <Name>primitive_divide</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\primitive_multiply.vcxproj">
+      <Project>{6C6DB3A5-C0BB-3A65-A864-242767A0B422}</Project>
+      <Name>primitive_multiply</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\queue_from_stacks.vcxproj">
+      <Project>{42BAF92E-784D-3D14-8EE5-247926AF8B81}</Project>
+      <Name>queue_from_stacks</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\queue_with_max.vcxproj">
+      <Project>{5AEC834D-8910-365F-9A89-36444A1D7B45}</Project>
+      <Name>queue_with_max</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\random_permutation.vcxproj">
+      <Project>{65A63E2B-8B7D-3A01-8594-F674322ECF13}</Project>
+      <Name>random_permutation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\random_subset.vcxproj">
+      <Project>{7E1B2896-7331-3D91-A3F1-BB8D75E0BB87}</Project>
+      <Name>random_subset</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\range_lookup_in_bst.vcxproj">
+      <Project>{A219D1C5-6AB0-373F-9C98-AB21BEB2B21F}</Project>
+      <Name>range_lookup_in_bst</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\real_square_root.vcxproj">
+      <Project>{8B44ACA7-3B14-36BF-AD8F-CC8F53FD7B12}</Project>
+      <Name>real_square_root</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\rectangle_intersection.vcxproj">
+      <Project>{64FB2EBF-68F0-3FD1-B849-30DB9CF40E00}</Project>
+      <Name>rectangle_intersection</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\refueling_schedule.vcxproj">
+      <Project>{696C8530-551E-355F-9E53-A9D5804CE786}</Project>
+      <Name>refueling_schedule</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\regular_expression.vcxproj">
+      <Project>{DF413C92-D5EA-31D2-AA22-787E4EFED9A4}</Project>
+      <Name>regular_expression</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\remove_duplicates.vcxproj">
+      <Project>{9A89DC8B-B808-3B5A-A946-CBA5C1EA0FBD}</Project>
+      <Name>remove_duplicates</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\remove_duplicates_from_sorted_list.vcxproj">
+      <Project>{993E3249-73EC-3C25-8010-6439679584A9}</Project>
+      <Name>remove_duplicates_from_sorted_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\replace_and_remove.vcxproj">
+      <Project>{CFE27CFC-7143-34D6-8E1A-545152063B91}</Project>
+      <Name>replace_and_remove</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\reverse_bits.vcxproj">
+      <Project>{7C36E6CE-4141-3418-AE2B-A0C11C772814}</Project>
+      <Name>reverse_bits</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\reverse_digits.vcxproj">
+      <Project>{4CB9A512-E694-37FB-8D9C-514726BFE7CE}</Project>
+      <Name>reverse_digits</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\reverse_sublist.vcxproj">
+      <Project>{3A6D5350-FF74-33FE-BE51-E3905FA702B7}</Project>
+      <Name>reverse_sublist</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\reverse_words.vcxproj">
+      <Project>{39AC66E2-9DC8-3740-8EDE-D6A4411D9CB8}</Project>
+      <Name>reverse_words</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\road_network.vcxproj">
+      <Project>{39DC6DFD-14AF-3BA6-9445-60BBA9FCB16A}</Project>
+      <Name>road_network</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\roman_to_integer.vcxproj">
+      <Project>{33602513-D566-3BB1-995E-938B59588F1F}</Project>
+      <Name>roman_to_integer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\rook_attack.vcxproj">
+      <Project>{D1782380-E317-3360-B0B7-2B17577C4FF1}</Project>
+      <Name>rook_attack</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\rotate_array.vcxproj">
+      <Project>{A9556DDD-D764-35C0-B15A-EB5817D79C6D}</Project>
+      <Name>rotate_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\run_length_compression.vcxproj">
+      <Project>{F3F172F1-4849-3795-ABDA-32C9ED555531}</Project>
+      <Name>run_length_compression</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_entry_equal_to_index.vcxproj">
+      <Project>{8A6624C9-B7EA-32E1-9A1B-3D02AB1DC344}</Project>
+      <Name>search_entry_equal_to_index</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_first_greater_value_in_bst.vcxproj">
+      <Project>{504F0C0A-AD51-3DC3-9C07-F6667EFEA53A}</Project>
+      <Name>search_first_greater_value_in_bst</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_first_key.vcxproj">
+      <Project>{7BE30D7A-C6C7-3D0E-A776-CB00D6BE628D}</Project>
+      <Name>search_first_key</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_for_min_max_in_array.vcxproj">
+      <Project>{47DFC383-987F-3451-A9D7-3D02213E4B13}</Project>
+      <Name>search_for_min_max_in_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_for_missing_element.vcxproj">
+      <Project>{C8B81105-6B23-3E93-B5F6-025191DCD4D3}</Project>
+      <Name>search_for_missing_element</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_frequent_items.vcxproj">
+      <Project>{57F666ED-553B-3DA9-AC68-D6F88B02E66E}</Project>
+      <Name>search_frequent_items</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_in_bst.vcxproj">
+      <Project>{F4F1A5D3-B098-3C2D-84B4-7FF34067B249}</Project>
+      <Name>search_in_bst</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_in_list.vcxproj">
+      <Project>{E8B5A6D1-DCFF-36E7-BC2A-7B290F8A8B59}</Project>
+      <Name>search_in_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_maze.vcxproj">
+      <Project>{DD69CE3D-9423-3EF2-8EEF-511AE4D811AC}</Project>
+      <Name>search_maze</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_row_col_sorted_matrix.vcxproj">
+      <Project>{D0CB5A67-6B32-38C6-B21B-1A87C61BC07D}</Project>
+      <Name>search_row_col_sorted_matrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_shifted_sorted_array.vcxproj">
+      <Project>{1657C7F3-8B9D-3015-B324-12441CE8D9B5}</Project>
+      <Name>search_shifted_sorted_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\search_unknown_length_array.vcxproj">
+      <Project>{E85A664B-624A-320F-94E4-EE9912673214}</Project>
+      <Name>search_unknown_length_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\smallest_nonconstructible_value.vcxproj">
+      <Project>{1C804395-3E66-3C34-BE42-FA1A4D5B6A78}</Project>
+      <Name>smallest_nonconstructible_value</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\smallest_subarray_covering_all_values.vcxproj">
+      <Project>{377D7F66-7764-3D0A-94D0-D27AFCFE366B}</Project>
+      <Name>smallest_subarray_covering_all_values</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\smallest_subarray_covering_set.vcxproj">
+      <Project>{9F7FBF2B-86B2-3C5C-8474-2077B900E573}</Project>
+      <Name>smallest_subarray_covering_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\snake_string.vcxproj">
+      <Project>{EFD48726-7308-3960-9446-7094959997AD}</Project>
+      <Name>snake_string</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\sort_almost_sorted_array.vcxproj">
+      <Project>{D4FFA793-F888-30A9-9E36-33964D158CD8}</Project>
+      <Name>sort_almost_sorted_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\sort_increasing_decreasing_array.vcxproj">
+      <Project>{B9ABD11B-38F3-363F-B0EE-4B294A36D733}</Project>
+      <Name>sort_increasing_decreasing_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\sort_list.vcxproj">
+      <Project>{6D2A3558-53BD-3E3C-9EEB-9EBD317E8FBD}</Project>
+      <Name>sort_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\sorted_array_remove_dups.vcxproj">
+      <Project>{0BF46E63-5976-3C5D-BEB7-38CAA389CA04}</Project>
+      <Name>sorted_array_remove_dups</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\sorted_arrays_merge.vcxproj">
+      <Project>{1019F031-89BA-30A1-A4AA-D6BE0E37C440}</Project>
+      <Name>sorted_arrays_merge</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\sorted_list_to_bst.vcxproj">
+      <Project>{9E0464D2-1749-3757-B5AF-0FC1E5440156}</Project>
+      <Name>sorted_list_to_bst</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\sorted_lists_merge.vcxproj">
+      <Project>{A0AD2229-722F-335A-9A10-376C26863551}</Project>
+      <Name>sorted_lists_merge</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\spiral_ordering.vcxproj">
+      <Project>{3F24E19C-A2FB-3B92-947E-02D299A38525}</Project>
+      <Name>spiral_ordering</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\spreadsheet_encoding.vcxproj">
+      <Project>{F2D40F9E-3FDB-35AA-98BF-72CD75225897}</Project>
+      <Name>spreadsheet_encoding</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\stack_with_max.vcxproj">
+      <Project>{0F66217D-05DF-30E5-AE52-BDDEA8A823FA}</Project>
+      <Name>stack_with_max</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\string_decompositions_into_dictionary_words.vcxproj">
+      <Project>{40B20C8A-28D8-3F3F-BBA4-FB4B953DD6E2}</Project>
+      <Name>string_decompositions_into_dictionary_words</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\string_integer_interconversion.vcxproj">
+      <Project>{3A727A16-87C3-369C-9C15-2D3009176A35}</Project>
+      <Name>string_integer_interconversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\string_transformability.vcxproj">
+      <Project>{FD8E83B7-50DE-3075-87B3-4E5E53EEEF10}</Project>
+      <Name>string_transformability</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\substring_match.vcxproj">
+      <Project>{1F3F66A0-F20A-3382-9CB2-4E4FB0DBC098}</Project>
+      <Name>substring_match</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\successor_in_tree.vcxproj">
+      <Project>{BDAE87B2-840D-3A2D-8616-E14764574707}</Project>
+      <Name>successor_in_tree</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\sudoku_solve.vcxproj">
+      <Project>{F3324BF1-8735-325B-B684-7E88F4D0E7A9}</Project>
+      <Name>sudoku_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\sum_root_to_leaf.vcxproj">
+      <Project>{6EDE111A-32DD-3681-BDA0-5D17AFE8B23D}</Project>
+      <Name>sum_root_to_leaf</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\sunset_view.vcxproj">
+      <Project>{087C1CBD-655B-38DE-9A20-57958D6DE3A7}</Project>
+      <Name>sunset_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\swap_bits.vcxproj">
+      <Project>{18F59558-0336-3269-98DA-5010E4B1F52F}</Project>
+      <Name>swap_bits</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\task_pairing.vcxproj">
+      <Project>{FB669B1B-7147-3BAE-BC63-7FDC1D2F1C31}</Project>
+      <Name>task_pairing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\three_sum.vcxproj">
+      <Project>{E573072E-D4D4-3A0B-A932-017AE3A621DA}</Project>
+      <Name>three_sum</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\tree_connect_leaves.vcxproj">
+      <Project>{F68657DC-FC82-3CF1-8919-B9449E0F6D9D}</Project>
+      <Name>tree_connect_leaves</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\tree_exterior.vcxproj">
+      <Project>{217A6BC2-ADA7-3475-B6D4-591642E2B993}</Project>
+      <Name>tree_exterior</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\tree_from_preorder_inorder.vcxproj">
+      <Project>{5DACCF5D-F89F-3E20-931C-D7F366F325A8}</Project>
+      <Name>tree_from_preorder_inorder</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\tree_from_preorder_with_null.vcxproj">
+      <Project>{40ACF988-9CFB-3EEF-9E33-4D36A60DF327}</Project>
+      <Name>tree_from_preorder_with_null</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\tree_inorder.vcxproj">
+      <Project>{B0E7DB61-724C-342A-A6B5-28B5696BDE32}</Project>
+      <Name>tree_inorder</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\tree_level_order.vcxproj">
+      <Project>{E95D7707-DDE7-3FD7-8A02-E5562D5B2EAA}</Project>
+      <Name>tree_level_order</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\tree_postorder.vcxproj">
+      <Project>{348EB132-5DE9-3C0E-B2EA-C7DEF893700E}</Project>
+      <Name>tree_postorder</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\tree_preorder.vcxproj">
+      <Project>{81F2A914-BE6F-3F7E-8766-2A14E48F4B7F}</Project>
+      <Name>tree_preorder</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\tree_right_sibling.vcxproj">
+      <Project>{748C52FB-CCC8-3D8B-BA44-5F3723B1C404}</Project>
+      <Name>tree_right_sibling</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\tree_with_parent_inorder.vcxproj">
+      <Project>{94D2564F-4BFB-34AA-85D0-5795D7E8485C}</Project>
+      <Name>tree_with_parent_inorder</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\two_sorted_arrays_merge.vcxproj">
+      <Project>{CEA9DBCE-1E3E-32C2-A4AA-DB4C9982CC55}</Project>
+      <Name>two_sorted_arrays_merge</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\two_sum.vcxproj">
+      <Project>{219709B5-0C50-300B-A137-844BC3974B1C}</Project>
+      <Name>two_sum</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\uniform_random_number.vcxproj">
+      <Project>{D63379A4-2B65-3C3F-AF19-653D02FD2E57}</Project>
+      <Name>uniform_random_number</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\valid_ip_addresses.vcxproj">
+      <Project>{ADF7D0AD-0453-3FB0-AC92-0030091DA239}</Project>
+      <Name>valid_ip_addresses</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\repo2\EpiJudge\epi_judge_cpp\vs\zip_list.vcxproj">
+      <Project>{CBFA7EA6-DAF9-3F07-9C32-41D9227446E4}</Project>
+      <Name>zip_list</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
