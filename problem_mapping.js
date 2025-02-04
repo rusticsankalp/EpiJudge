@@ -65,7 +65,7 @@ problem_mapping = {
                 "passed": 0,
                 "total": 10000
             },
-            "Python: closest_int_same_weight.py": { 
+            "Python: closest_int_same_weight.py": {
                 "passed": 0,
                 "total": 10000
             }
@@ -172,7 +172,7 @@ problem_mapping = {
     "Chapter 05: Arrays": {
         "5.00 Bootcamp: Arrays": {
             "C++: even_odd_array.cc": {
-                "passed": 0,
+                "passed": 1001,
                 "total": 1001
             },
             "Java: EvenOddArray.java": {
@@ -186,7 +186,7 @@ problem_mapping = {
         },
         "5.01 The Dutch national flag problem": {
             "C++: dutch_national_flag.cc": {
-                "passed": 0,
+                "passed": 204,
                 "total": 204
             },
             "Java: DutchNationalFlag.java": {
@@ -200,7 +200,7 @@ problem_mapping = {
         },
         "5.02 Increment an arbitrary-precision integer": {
             "C++: int_as_array_increment.cc": {
-                "passed": 0,
+                "passed": 505,
                 "total": 505
             },
             "Java: IntAsArrayIncrement.java": {

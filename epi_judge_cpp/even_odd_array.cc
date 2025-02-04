@@ -1,13 +1,33 @@
 #include <set>
 #include <vector>
 
+#include <algorithm>
+
 #include "test_framework/generic_test.h"
 #include "test_framework/test_failure.h"
 #include "test_framework/timed_executor.h"
 using std::vector;
 
+using namespace std;
+
 void EvenOdd(vector<int>* A_ptr) {
-  // TODO - you fill in here.
+    vector<int>& A = *A_ptr;
+
+    int evenLoc = 0;
+    int oddLoc = A.size();//Initial Value to be outside array by design
+
+    while (evenLoc < oddLoc)
+    {
+        if (A[evenLoc] % 2 == 0)
+        {
+            evenLoc++;
+        }
+        else
+        {
+            --oddLoc;//Decrement first as this is outside the lookup area
+            swap(A[evenLoc], A[oddLoc]);  //not incrementing evenLoc as it needs to be tested again in next iteration
+        }
+    }
   return;
 }
 void EvenOddWrapper(TimedExecutor& executor, vector<int> A) {
