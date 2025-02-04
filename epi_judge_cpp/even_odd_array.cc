@@ -13,19 +13,19 @@ using namespace std;
 void EvenOdd(vector<int>* A_ptr) {
     vector<int>& A = *A_ptr;
 
-    int evenLoc = 0;
-    int oddLoc = A.size();//Initial Value to be outside array by design
+    int evenEndLoc = 0;
+    int oddStartLoc = A.size();//Initial Value to be outside array by design
 
-    while (evenLoc < oddLoc)
+    while (evenEndLoc < oddStartLoc)
     {
-        if (A[evenLoc] % 2 == 0)
+        if (A[evenEndLoc] % 2 == 0)
         {
-            evenLoc++;
+            evenEndLoc++;
         }
         else
         {
-            --oddLoc;//Decrement first as this is outside the lookup area
-            swap(A[evenLoc], A[oddLoc]);  //not incrementing evenLoc as it needs to be tested again in next iteration
+            --oddStartLoc;//Decrement first as this is outside the lookup area
+            swap(A[evenEndLoc], A[oddStartLoc]);  //not incrementing evenLoc as it needs to be tested again in next iteration
         }
     }
   return;

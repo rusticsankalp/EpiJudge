@@ -88,7 +88,7 @@ decltype(auto) ParseSerializedArgsImpl(
 }  // namespace test_utils
 
 std::string GetDefaultTestDataDirPath() {
-  static constexpr int kMaxSearchDepth = 4;
+  static constexpr int kMaxSearchDepth = 10;
 
   std::string path = "test_data";
   for (int i = 0; i < kMaxSearchDepth; i++) {

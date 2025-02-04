@@ -12,7 +12,7 @@ enum class Color { kRed, kWhite, kBlue };
 void DutchFlagPartition(int pivot_index, vector<Color>* A_ptr) {
     vector<Color>& A = *A_ptr;
 
-    int equalStartLoc = 0;
+    int smallEndLoc = -1;
     int equalEndLoc = 0;
     int largerStartLoc = A.size();
 
@@ -22,8 +22,8 @@ void DutchFlagPartition(int pivot_index, vector<Color>* A_ptr) {
     {
         if (A[equalEndLoc] < color)
         {
-            swap(A[equalStartLoc], A[equalEndLoc]);
-            equalStartLoc++;
+            smallEndLoc++;
+            swap(A[smallEndLoc], A[equalEndLoc]);
             equalEndLoc++;
         }
         else if (A[equalEndLoc] == color)
