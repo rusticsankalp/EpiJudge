@@ -6,7 +6,7 @@
 #include "test_framework/test_failure.h"
 #include "test_framework/timed_executor.h"
 using std::vector;
-using namespace std;
+//using namespace std;
 enum class Color { kRed, kWhite, kBlue };
 
 void DutchFlagPartition(int pivot_index, vector<Color>* A_ptr) {
@@ -23,7 +23,7 @@ void DutchFlagPartition(int pivot_index, vector<Color>* A_ptr) {
         if (A[equalEndLoc] < color)
         {
             smallEndLoc++;
-            swap(A[smallEndLoc], A[equalEndLoc]);
+            std::swap(A[smallEndLoc], A[equalEndLoc]);
             equalEndLoc++;
         }
         else if (A[equalEndLoc] == color)
@@ -33,7 +33,7 @@ void DutchFlagPartition(int pivot_index, vector<Color>* A_ptr) {
         else
         {
             --largerStartLoc;
-            swap(A[equalEndLoc], A[largerStartLoc]);
+            std::swap(A[equalEndLoc], A[largerStartLoc]);
         }
     }
   return;

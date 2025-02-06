@@ -8,7 +8,7 @@
 #include "test_framework/timed_executor.h"
 using std::vector;
 
-using namespace std;
+//using namespace std;
 
 void EvenOdd(vector<int>* A_ptr) {
     vector<int>& A = *A_ptr;
@@ -25,7 +25,7 @@ void EvenOdd(vector<int>* A_ptr) {
         else
         {
             --oddStartLoc;//Decrement first as this is outside the lookup area
-            swap(A[evenEndLoc], A[oddStartLoc]);  //not incrementing evenLoc as it needs to be tested again in next iteration
+           std::swap(A[evenEndLoc], A[oddStartLoc]);  //not incrementing evenLoc as it needs to be tested again in next iteration
         }
     }
   return;

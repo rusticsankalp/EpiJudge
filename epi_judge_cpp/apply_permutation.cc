@@ -1,7 +1,7 @@
 #include <vector>
 #include<algorithm>
 
-using namespace std;
+//using namespace std;
 
 #include "test_framework/generic_test.h"
 using std::vector;
@@ -12,8 +12,8 @@ void ApplyPermutation(vector<int> perm, vector<int>* A_ptr) {
     {
         while (perm[i] != i)
         {
-            swap(A[i], A[perm[i]]);
-            swap(perm[i], perm[perm[i]]);
+            std::swap(A[i], A[perm[i]]);
+            std::swap(perm[i], perm[perm[i]]);
         }
     }
 

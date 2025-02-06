@@ -1,7 +1,7 @@
 #include <vector>
 #include <algorithm>
 
-using namespace std;
+//using namespace std;
 
 #include "test_framework/generic_test.h"
 using std::vector;
