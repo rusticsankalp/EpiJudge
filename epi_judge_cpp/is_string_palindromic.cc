@@ -1,10 +1,11 @@
 #include <string>
+#include<algorithm>
 
 #include "test_framework/generic_test.h"
 using std::string;
 bool IsPalindromic(const string& s) {
-  // TODO - you fill in here.
-  return true;
+
+    return std::equal(begin(s), begin(s) + s.size() / 2, rbegin(s));
 }
 
 int main(int argc, char* argv[]) {
