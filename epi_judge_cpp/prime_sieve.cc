@@ -1,9 +1,10 @@
 #include <vector>
+#include <numeric>
 
 #include "test_framework/generic_test.h"
 using std::vector;
 // Given n, return all primes up to and including n.
-vector<int> GeneratePrimes(int n) {
+vector<int> GeneratePrimesp1(int n) {
     vector<bool> prime_candidates(n+1,true);
 
     for (int i = 2; i <= n; i++)
@@ -27,6 +28,40 @@ vector<int> GeneratePrimes(int n) {
     }
   
     return primes;
+}
+
+
+struct PrimeValue {
+
+public:
+    int num;
+    bool isPrime;
+
+    PrimeValue(int v)
+    {
+        PrimeValue(v, true);
+    }
+    PrimeValue(int v, bool prime = true) : num{ v }, isPrime{ prime }
+    {
+
+    }
+};
+
+
+vector<int> GeneratePrimes(int n) {
+    vector<PrimeValue> prime_candidates{};
+    std::iota(begin(prime_candidates), begin(prime_candidates) + n + 1, 0);
+
+    std::for_each(begin(prime_candidates) + 2, end(prime_candidates),
+        [](PrimeValue &primeValue) 
+        {
+
+
+
+
+        });
+
+    return {};
 }
 
 int main(int argc, char* argv[]) {
