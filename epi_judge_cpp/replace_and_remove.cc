@@ -1,15 +1,30 @@
 #include <iterator>
 #include <string>
 #include <vector>
+#include<algorithm>
 
 #include "test_framework/generic_test.h"
 #include "test_framework/timed_executor.h"
 using std::string;
 using std::vector;
 
+using namespace std;
+
+
 int ReplaceAndRemove(int size, char s[]) {
+
+    std::string str_obj(s);
+    auto res= std::accumulate(begin(str_obj), end(str_obj), 0, [](int v, char a)
+    {
+        if (a == 'a')
+            return v + 1;
+
+        if (a == 'b')
+            return v - 1;
+
+    });
   // TODO - you fill in here.
-  return 0;
+  return res;
 }
 vector<string> ReplaceAndRemoveWrapper(TimedExecutor& executor, int size,
                                        const vector<string>& s) {
