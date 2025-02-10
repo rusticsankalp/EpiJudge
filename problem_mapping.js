@@ -594,7 +594,7 @@ problem_mapping = {
         },
         "6.09 Compute all valid IP addresses": {
             "C++: valid_ip_addresses.cc": {
-                "passed": 0,
+                "passed": 10008,
                 "total": 10008
             },
             "Java: ValidIpAddresses.java": {
@@ -652,15 +652,15 @@ problem_mapping = {
     "Chapter 07: Linked Lists": {
         "7.00 Bootcamp: Linked Lists": {
             "C++: delete_from_list.cc": {
-                "passed": 0,
+                "passed": 457,
                 "total": 457
             },
             "C++: insert_in_list.cc": {
-                "passed": 0,
+                "passed": 504,
                 "total": 504
             },
             "C++: search_in_list.cc": {
-                "passed": 0,
+                "passed": 505,
                 "total": 505
             },
             "Java: DeleteFromList.java": {
@@ -844,7 +844,7 @@ problem_mapping = {
         },
         "7.12 Implement list pivoting": {
             "C++: pivot_list.cc": {
-                "passed": 0,
+                "passed": 208,
                 "total": 208
             },
             "Java: PivotList.java": {
