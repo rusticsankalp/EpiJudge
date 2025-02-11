@@ -44,7 +44,7 @@ shared_ptr<ListNode<int>> ListPivoting(const shared_ptr<ListNode<int>>& l,
       iter = next;
   }
 
- 
+ //:Order is very important, i.e. rope them from back to front
   greater_last->next = nullptr;
   equal_last->next = greater_dummy->next;
   smaller_last->next = equal_dummy->next;
