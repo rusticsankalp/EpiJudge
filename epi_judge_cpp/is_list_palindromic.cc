@@ -3,6 +3,47 @@
 
 bool IsLinkedListAPalindrome(shared_ptr<ListNode<int>> L) {
   // TODO - you fill in here.
+
+    auto iterator = L;
+
+    int length{ 0 };
+    while (iterator != nullptr)
+    {
+        length++;
+        iterator = iterator->next;
+    }
+
+    if (length <= 1) return true;
+
+    auto range = length / 2;
+
+    iterator = L;
+    shared_ptr<ListNode<int>> first_dummy_head(new ListNode<int>());
+    for (int i = 0; i < range; i++)
+    {
+        auto next = iterator->next;
+        iterator->next = first_dummy_head->next;
+        first_dummy_head->next = iterator;
+
+        iterator = next;
+    }
+
+    if (length % 2 != 0)
+    {
+        iterator = iterator->next;
+    }
+
+    auto last_iter = first_dummy_head->next;
+
+    for (int i = 0; i < range; i++)
+    {
+        if (iterator->data != last_iter->data)
+            return false;
+        
+        iterator = iterator->next;
+        last_iter = last_iter->next;
+    }
+
   return true;
 }
 

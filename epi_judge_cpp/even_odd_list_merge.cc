@@ -6,6 +6,8 @@ shared_ptr<ListNode<int>> EvenOddMerge(const shared_ptr<ListNode<int>>& L)
     shared_ptr<ListNode<int>> odd_tail{ odd_dummy_head }, even_tail{ even_dummy_head };
 
     auto iter = L;
+
+    //:this is even odd positions and not even odd numbers
     bool turn = false;
     while (iter)
     {
@@ -14,21 +16,19 @@ shared_ptr<ListNode<int>> EvenOddMerge(const shared_ptr<ListNode<int>>& L)
         {
             odd_tail->next = iter;
             odd_tail = iter;
-            //odd_tail->next = nullptr;
+            //not setting the end to be null here but at the end
         }
         else
         {
             even_tail->next = iter;
             even_tail = iter;
-            //even_tail->next = nullptr;
+            //not setting the end to be null here but at the end
         }
 
         turn = !turn;
         iter = next;
     }
 
-    //even_tail->next = nullptr;
-    //odd_tail->next = even_dummy_head->next;
 
     odd_tail->next = nullptr;
     even_tail->next = odd_dummy_head->next;
