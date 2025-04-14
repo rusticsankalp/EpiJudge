@@ -31,35 +31,35 @@ vector<int> GeneratePrimesp1(int n) {
 }
 
 
-struct PrimeValue {
-
-public:
-    int num;
-    bool isPrime;
-
-    PrimeValue(int v)
-    {
-        PrimeValue(v, true);
-    }
-    PrimeValue(int v, bool prime = true) : num{ v }, isPrime{ prime }
-    {
-
-    }
-};
+//struct PrimeValue {
+//
+//public:
+//    int num;
+//    bool isPrime;
+//
+//    PrimeValue(int v)
+//    {
+//        PrimeValue(v, true);
+//    }
+//    PrimeValue(int v, bool prime = true) : num{ v }, isPrime{ prime }
+//    {
+//
+//    }
+//};
 
 
 vector<int> GeneratePrimes(int n) {
-    vector<PrimeValue> prime_candidates{};
-    std::iota(begin(prime_candidates), begin(prime_candidates) + n + 1, 0);
+    //vector<PrimeValue> prime_candidates{};
+    //std::iota(begin(prime_candidates), begin(prime_candidates) + n + 1, 0);
 
-    std::for_each(begin(prime_candidates) + 2, end(prime_candidates),
-        [](PrimeValue &primeValue) 
-        {
-
-
+    //std::for_each(begin(prime_candidates) + 2, end(prime_candidates),
+    //    [](PrimeValue &primeValue) 
+    //    {
 
 
-        });
+
+
+    //    });
 
     return {};
 }

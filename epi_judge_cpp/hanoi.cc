@@ -2,6 +2,7 @@
 #include <stack>
 #include <string>
 #include <vector>
+#include <iostream>
 
 #include "test_framework/generic_test.h"
 #include "test_framework/test_failure.h"
@@ -10,9 +11,57 @@ using std::array;
 using std::stack;
 using std::vector;
 const int kNumPegs = 3;
+
+
+void computeTransfers(int num_rings, vector<stack<int>> &pegs, int from, int to, int use, vector<vector<int>>& result)
+{
+    if (num_rings <= 0)
+        return;
+
+    computeTransfers(num_rings - 1, pegs, from, use, to, result);
+
+    pegs[to].push(pegs[from].top());
+    pegs[from].pop();
+    
+    result.push_back(vector<int>{from, to});
+    
+
+    computeTransfers(num_rings - 1, pegs, use, to, from, result);
+}
+
+void computeTransfersIterative(int num_rings, vector<stack<int>>& pegs, int from, int to, int use, vector<vector<int>>& result)
+{
+    if (num_rings <= 0)
+        return;
+
+    computeTransfers(num_rings - 1, pegs, from, use, to, result);
+
+    pegs[to].push(pegs[from].top());
+    pegs[from].pop();
+
+    result.push_back(vector<int>{from, to});
+
+
+    computeTransfers(num_rings - 1, pegs, use, to, from, result);
+}
+
+
 vector<vector<int>> ComputeTowerHanoi(int num_rings) {
+
+    vector<stack<int>> pegStack(3, stack<int>{});
+    vector<vector<int>> result{};
+
+    for (int i = num_rings; i > 0; i--)
+    {
+        pegStack[0].push(i);
+    }
+
+    computeTransfers(num_rings, pegStack, 0, 1, 2 , result);
+
+    std::cout << std::endl;
+    
   // TODO - you fill in here.
-  return {};
+  return result;
 }
 void ComputeTowerHanoiWrapper(TimedExecutor& executor, int num_rings) {
   array<stack<int>, kNumPegs> pegs;
